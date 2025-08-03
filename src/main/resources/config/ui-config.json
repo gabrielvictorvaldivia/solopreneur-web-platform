@@ -1,0 +1,26 @@
+{
+  "preferences": {
+    "theme": "dark",
+    "language": "en",
+    "timezone": "America/New_York",
+    "dateFormat": "MM/DD/YYYY",
+    "currency": "USD"
+  },
+  "branding": {
+    "primaryColor": "#007bff",
+    "secondaryColor": "#6c757d",
+    "logo": "/assets/logo.png",
+    "favicon": "/assets/favicon.ico"
+  },
+  "layout": {
+    "sidebarCollapsed": false,
+    "headerFixed": true,
+    "footerVisible": true,
+    "breadcrumbsEnabled": true
+  },
+  "themes": {
+    "available": ["light", "dark", "auto"],
+    "default": "dark",
+    "customCss": "/assets/custom-theme.css"
+  }
+}

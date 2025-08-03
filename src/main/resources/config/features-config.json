@@ -1,0 +1,26 @@
+{
+  "features": {
+    "beta": {
+      "newDashboard": false,
+      "advancedReports": true,
+      "aiAssistant": false
+    },
+    "experimental": {
+      "darkModeV2": false,
+      "realTimeSync": false,
+      "voiceCommands": false
+    },
+    "modules": {
+      "invoicing": true,
+      "timeTracking": true,
+      "clientManagement": true,
+      "analytics": true,
+      "integrations": false
+    }
+  },
+  "permissions": {
+    "canExportData": true,
+    "canModifySettings": true,
+    "canAccessBetaFeatures": false
+  }
+}

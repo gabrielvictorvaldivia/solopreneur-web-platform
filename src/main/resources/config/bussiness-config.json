@@ -1,0 +1,30 @@
+
+{
+  "owner": {
+    "name": "John Doe",
+    "displayName": "John Doe",
+    "title": "Solopreneur",
+    "bio": "Passionate entrepreneur building innovative solutions"
+  },
+  "contacts": {
+    "primary": {
+      "email": "john.doe@example.com",
+      "phone": "+1-555-0123"
+    },
+    "social": {
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "website": "https://johndoe.dev",
+      "github": "https://github.com/johndoe"
+    },
+    "business": {
+      "companyName": "Doe Enterprises",
+      "address": {
+        "street": "123 Business Ave",
+        "city": "Tech City",
+        "state": "CA",
+        "zipCode": "12345",
+        "country": "USA"
+      }
+    }
+  }
+}

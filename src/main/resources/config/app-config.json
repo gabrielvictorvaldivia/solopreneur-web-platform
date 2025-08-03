@@ -1,0 +1,21 @@
+{
+  "system": {
+    "projectName": "Sistema de Gestão Autônomos",
+    "projectDescription": "Comprehensive management system for autonomous professionals",
+    "version": "1.0.0",
+    "environment": "development",
+    "lastUpdated": "2025-08-03T00:00:00Z"
+  },
+  "features": {
+    "notifications": {
+      "email": true,
+      "push": true,
+      "sms": false
+    },
+    "dashboard": {
+      "defaultView": "overview",
+      "showMetrics": true,
+      "autoRefresh": 300
+    }
+  }
+}
