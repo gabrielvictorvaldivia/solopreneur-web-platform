@@ -1,1 +1,38 @@
+# Versão do Docker Compose
+version: '3.9'
+
 services:
+  # Nome do nosso serviço
+  solopreneur-app:
+    # Instrução para construir a imagem usando o Dockerfile no diretório atual
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    # Nome da imagem que será gerada
+    image: solopreneur-web-platform:latest
+    
+    # Nome do contêiner que será criado
+    container_name: solopreneur-platform
+    
+    # Mapeia a porta 8080 do contêiner para a porta 8080 da sua máquina local
+    ports:
+      - "8080:8080"
+
+    # Define variáveis de ambiente para a aplicação dentro do contêiner
+    environment:
+      # Exemplo: Define o perfil ativo do Spring Boot para 'prod'
+      # Isso fará com que a aplicação carregue o 'application-prod.properties'
+      - SPRING_PROFILES_ACTIVE=prod
+
+    # Política de reinicialização. O contêiner será reiniciado a menos que seja parado manualmente.
+    restart: unless-stopped
+    
+    # Verificação de saúde: O Docker verificará se a aplicação está realmente funcional,
+    # não apenas se o processo foi iniciado. Requer o Spring Boot Actuator.
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s # Dá tempo para a aplicação iniciar antes de começar a verificar
